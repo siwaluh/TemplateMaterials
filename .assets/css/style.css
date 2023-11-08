@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body.align {
+  display: grid;
+  align-items: center;
+  max-width: 800px;
+  padding: 10px;
+  margin: auto;
+  background-color: #20242c;
+}
