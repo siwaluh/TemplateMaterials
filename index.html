@@ -4,9 +4,40 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Template Materials</title>
-  <link rel='stylesheet' href='./assets/bootstrap-b25.0.2-dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='./.assets/bootstrap-5.0.2-dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='./.assets/css/style.css'>
 </head>
-<body>
-
+<body class='align'>
+  <h2 style='color: white;'>List Materials</h2>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          #1 Download Box
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <ul class="list-group list-group-numbered">
+          <li class="list-group-item"><a href='./DownloadBox/animebatch_version/' target='_blank'>Animebatch Version</a></li>
+          <li class="list-group-item"><a href='./DownloadBox/meownime_version/' target='_blank'>Meownime Version</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          #2 Syntax Highligther
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item"><a href='./SyntaxHighlighter/version_1/' target='_blank'>Version 1</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='./.assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js'></script>
 </body>
 </html>

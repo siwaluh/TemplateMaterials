@@ -8,5 +8,18 @@ body.align {
   max-width: 800px;
   padding: 10px;
   margin: auto;
+  background-color: #fff;
+}
+
+[data-tema="dark"] body.align {
   background-color: #20242c;
+}
+
+.align .tx-center {
+  text-align: center;
+  color: black;
+}
+
+[data-tema="dark"] .align .tx-center {
+  color: white;
 }
