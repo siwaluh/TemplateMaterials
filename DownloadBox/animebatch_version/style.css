@@ -1,0 +1,129 @@
+/* Download Box - Animebatch Version css */
+.mctnx {
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-bottom: 20px
+}
+
+.mctnx .soraddl .content,
+.soraddl {
+  overflow: hidden
+}
+
+.mctnx .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-out;
+  padding: 0
+}
+
+.mctnx .sorattl.notcollapsible+.content {
+  max-height: 100%;
+}
+
+.soraddl {
+  margin-bottom: 5px
+}
+
+.soraddl .sorattl {
+  padding: 9px 10px;
+  background: #0c70de;
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 0
+}
+
+.soraddl .sorattl:after {
+  content: '';
+  display: inline-block;
+  min-width: 1.2em;
+  min-height: 1.2em;
+  vertical-align: middle;
+  float: right;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' fill='%23fff'/%3E%3C/svg%3E") center/24px no-repeat
+}
+
+.soraddl .sorattl h3 {
+  margin: 0;
+  font-size: inherit;
+  display: inline-block;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  color: #fff;
+  font-weight: 600
+}
+
+.soraddl .sorattl.collapsible.active,
+.soraddl .sorattl.notcollapsible {
+  background: #333
+}
+
+.soraddl .sorattl.collapsible.active::after,
+.soraddl .sorattl.notcollapsible::after {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='%23fff'/%3E%3C/svg%3E") center/24px no-repeat
+}
+
+.soraddl .soraurl {
+  padding: 4px 0;
+  border-bottom: 1px solid #ebebeb
+}
+
+.soraddl .soraurl a {
+  display: inline-block;
+  background: #f0f2f3;
+  padding: 4px 7px;
+  border-radius: 3px;
+  margin: 2px;
+  text-decoration: none;
+  font-size: 13px
+}
+
+.soraddl .soraurl a:hover,
+.soraddl.dlone .soraurl a:nth-child(1):hover {
+  background: #444 !important;
+  color: #fff
+}
+
+.soraddl .soraurl a:nth-child(1) {
+  background: #0c70de;
+  color: #fff;
+  font-weight: 500
+}
+
+.soraddl.dlone .soraurl {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.soraddl.dlone .soraurl .res {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 auto;
+  max-height: 27px;
+  padding: 4px 7px;
+  background: #0c70de;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 3px;
+  margin: 2px 4px 2px 0
+}
+
+.soraddl.dlone .soraurl .slink {
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 15px
+}
+
+.soraddl.dlone .soraurl a:nth-child(1) {
+  background: #f0f2f3 !important;
+  color: inherit;
+  font-weight: 400
+}
