@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-body.align {
-  display: grid;
-  align-items: center;
+body {
   max-width: 800px;
   padding: 10px;
   margin: auto;
   background-color: #fff;
+}
+
+body.align {
+  display: grid;
+  align-items: center;
 }
 
 [data-tema="dark"] body.align {
