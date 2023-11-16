@@ -621,7 +621,7 @@ svg,
   top: 1.5rem;
 }
 
-.igniel {
+.ign {
   flex-direction: row;
   margin: 2rem auto;
   max-width: calc(1190px + (var(--gap) * 2) + (2rem * 2));
@@ -1380,7 +1380,7 @@ header,
     top: 0;
   }
 
-  .igniel {
+  .ign {
     margin: 0;
     max-width: 100%;
     padding: 0;
@@ -1696,7 +1696,7 @@ header,
 }
 
 @media screen and (max-width: 600px) {
-  .igniel {
+  .ign {
     margin: 0 1.5rem 1.5rem;
     padding: 0;
   }
@@ -1883,7 +1883,7 @@ header,
     color: var(--aksen);
   }
 
-  .igniel,
+  .ign,
   .konten,
   .logo svg,
   svg.buka,
@@ -1933,7 +1933,7 @@ header,
 
 @media screen and (max-width: 480px) {
 
-  .igniel {
+  .ign {
     margin: 0 1rem 1rem;
   }
 
