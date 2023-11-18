@@ -1,0 +1,168 @@
+#animeDex {
+  --bgColor: #202125;
+  --bgColor2: #35373d;
+  --txColor: #fff;
+  --txColor2: #ccc;
+}
+
+#animeDex>*:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.aD-video,
+.aD-video * {
+  box-sizing: border-box;
+}
+
+.aD-video,
+.aD-video .vid {
+  position: relative;
+}
+
+.aD-video {
+  z-index: 1;
+  font-size: 13px;
+}
+
+.aD-video .vid {
+  max-width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background-color: var(--bgColor);
+}
+
+.aD-video iframe,
+.aD-video .bg-play,
+.aD-video .bg-play img,
+.aD-video .bg-play .bg-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.aD-video .bg-play img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aD-video .bg-play .bg-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.aD-video .bg-play .bg-icon svg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.aD-video .bg-play .bg-icon svg path {
+  transition: fill .3s;
+}
+
+.aD-video .bg-play .bg-icon:hover svg path {
+  fill: red;
+}
+
+.aD-video .s-title {
+  margin-right: 15px;
+}
+
+.aD-video .selectItem,
+.aD-video .s-item {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.aD-video .selectItem {
+  background-color: var(--bgColor);
+  color: var(--txColor);
+}
+
+.aD-video .selectItem {
+  padding: 10px;
+  border-radius: 7px;
+  flex-wrap: nowrap;
+}
+
+.aD-video .s-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aD-video .info {
+  color: var(--txColor);
+  text-align: center;
+}
+
+.aD-video .info>* {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.aD-video .info .vid-title {
+  color: red;
+}
+
+.aD-video .s-item {
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.aD-video .s-item li {
+  padding: 8px 10px;
+  background-color: var(--bgColor2);
+  color: var(--txColor2);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.aD-video .s-item li a {
+  color: var(--txColor2);
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.aD-video .s-item li.active,
+.aD-video .s-item li:hover {
+  color: black;
+  background-color: red;
+}
+
+.aD-video h4 {
+  color: var(--txColor);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 8px !important;
+}
+
+#aD-Download {
+  width: 100%;
+  padding: 10px;
+  color: var(--txColor2);
+  background-color: var(--bgColor2);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: all .3s;
+  border-radius: 7px;
+}
+
+#aD-Download:hover {
+  color: black;
+  background-color: red;
+}
